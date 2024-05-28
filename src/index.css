@@ -1,13 +1,23 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face{
+  font-family: 'RobotoMono';
+  src: url('./fonts/RobotoMono-Thin.ttf');
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* O * é o seletor universal, ele vai selecionar todos os componentes. Caso ele nao encontre a fonte robotomono
+ele vai utilizar monospace. */
+*{
+  font-family: 'RobotoMono', monospace;
+}
+
+/*aplicando alguns estilos no body*/
+body{
+  display: flex;
+  /* vh é a altura dividida em 100 partes, com isso ele utiliza a altura completa.*/
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  color: white;
+  background: linear-gradient(to right, rgb(83,105,118), rgb(41,46,73));
 }
