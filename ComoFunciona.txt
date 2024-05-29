@@ -1,0 +1,18 @@
+Esse doc dentro do projeto tem a função de explicar a estrutura para futuros estudos em cima do código.
+
+Basicamente após a criação do projeto com REACT vamos ter arquivos JSX, CSS trabalhando juntos, um com as
+funcionalidades e o outro trabalhando com o front-end ou a parte bonita da coisa toda.
+
+A estrutura funciona da seguinte maneira, temos o index que seria o que vai ser executado na página dentro do
+DOM (ou se preferir, dentro do navegador), esse index tem a função de mostrar nossos componentes criados com JSX.
+
+Nesse caso no projeto é uma calculadora, então vamos ter um "main" calculadora que vai ser executado dentro do index.
+
+Dentro dessa calculadora vamos ter botões que vão receber funcões e um estilo, por isso um arquivo JSX e um CSS para
+os botões.
+
+Dentro do index vamos "chamar" apenas a calculadora, e dentro da calculadora vamos chamar os botões.
+
+Então resumindo a hierarquia dos arquivos, podemos dizer que funciona da seguinte maneira:
+Index>calculadora>button (JSX).
+
